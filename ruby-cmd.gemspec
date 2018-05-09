@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jeeva"]
   spec.email         = ["anymsjeeva@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Cmd makes it easy to build slick CLIs with tab completion, command history, and built-in help inspired by Python cmd module}
   spec.homepage      = "https://github.com/codebrk/ruby-cmd"
   spec.license       = "MIT"
 
