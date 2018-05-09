@@ -16,7 +16,37 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+require 'ruby/cmd'
 
+class Prompt < CLI::Prompt
+
+  def initialize
+    super(Prompt)
+    @prompt = "sqweeks > "
+  end
+
+  def do_git(line)
+    puts "GIT: #{line}"
+  end
+
+  def complete_git
+    ["push", "commit", "init", "pull", "add"]
+  end
+
+  def do_test(line)
+    puts "TEST: #{line}"
+  end
+
+  def complete_test
+    ["hello", "world"]
+  end
+
+end
+
+prompt = Prompt.new
+prompt.cmd_loop
+```
 
 ## Development
 
